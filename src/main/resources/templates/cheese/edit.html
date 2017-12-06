@@ -14,7 +14,8 @@
     </div>
     <div th:each="cheese : ${cheeses}" class="form-group">
         <label for="desc-field">Description</label>
-        <input class="form-control" id="desc-field" type="text" th:value="${cheese.description}" name="description"/>
+        <input class="form-control" id="desc-field" type="text" th:value="${cheese.description
+        }" name="description"/>
     </div>
     <input th:each="cheese : ${cheeses}" type="hidden" th:value="${cheese.cheeseId}" name="cheeseId"/>
     <input type="submit" value="Edit Cheese"/>
